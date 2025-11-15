@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     locale: "en_AE",
   },
   icons: {
-    icon: '/favicon.jpg',
+    icon: '/favicon.ico',
   },
 };
 
@@ -44,6 +44,7 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <link rel="website icon" type="png" href="/favicon.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
