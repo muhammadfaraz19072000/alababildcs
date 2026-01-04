@@ -264,7 +264,7 @@ const HeroSlider = () => {
     },
     {
       id: 3,
-      bg: '/assets/img/slide3.png',
+      bg: '/assets/img/slide3.PNG',
       title: 'Complete Immigration & Visa Services',
       description: 'Comprehensive support for residency visas, work permits, and all immigration-related documentation in the UAE.',
       buttonText: 'Book Free Meeting'
@@ -362,7 +362,7 @@ const ServicesSection = () => {
     {
       id: 1,
       icon: '�',
-      image: '/assets/img/Services/License.png',
+      image: '/assets/img/Services/License.PNG',
       title: 'License Services',
       description: 'Complete assistance with new license issuance, renewal, and modification for all types of business activities in the UAE.',
       features: ['New License Issuance', 'License Renewal', 'License Modification', 'Business Activity Updates']
@@ -370,7 +370,7 @@ const ServicesSection = () => {
     {
       id: 2,
       icon: '🛂',
-      image: '/assets/img/Services/visa.jpg',
+      image: '/assets/img/Services/visa.JPG',
       title: 'Visa Services',
       description: 'Professional visa processing services for employment, family, investor, and tourist visas with expert guidance.',
       features: ['Employment Visas', 'Family Visas', 'Investor Visas', 'Tourist Visas']
@@ -378,7 +378,7 @@ const ServicesSection = () => {
     {
       id: 3,
       icon: '�',
-      image: '/assets/img/Services/vat.png',
+      image: '/assets/img/Services/vat.PNG',
       title: 'VAT & Tax Services',
       description: 'Comprehensive VAT registration, filing, and tax consultation services to ensure compliance with UAE regulations.',
       features: ['VAT Registration', 'Tax Filing', 'Tax Consultation', 'Compliance Support']
@@ -386,7 +386,7 @@ const ServicesSection = () => {
     {
       id: 4,
       icon: '�',
-      image: '/assets/img/Services/banking.jpg',
+      image: '/assets/img/Services/banking.JPG',
       title: 'Banking Solutions',
       description: 'Expert assistance with business and corporate bank account opening across major UAE banks.',
       features: ['Business Bank Accounts', 'Corporate Banking', 'Account Setup Assistance', 'Banking Documentation']
@@ -394,7 +394,7 @@ const ServicesSection = () => {
     {
       id: 5,
       icon: '™️',
-      image: '/assets/img/Services/trademark.jpg',
+      image: '/assets/img/Services/trademark.JPG',
       title: 'Trademark & Business Formation',
       description: 'Complete trademark registration and business formation services including company setup and registration.',
       features: ['Trademark Registration', 'Company Formation', 'Business Setup', 'Legal Documentation']
@@ -402,7 +402,7 @@ const ServicesSection = () => {
     {
       id: 6,
       icon: '💳',
-      image: '/assets/img/Services/payment.jpg',
+      image: '/assets/img/Services/payment.JPG',
       title: 'Payment Solutions',
       description: 'Modern payment solutions including payment links, gateways, and mobile POS devices for your business needs. ',
       features: ['Payment Links', 'Payment Gateways', 'Mobile POS Devices', 'Payment Integration']
