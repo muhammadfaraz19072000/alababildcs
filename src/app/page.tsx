@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaPhone,
   FaEnvelope,
+  FaWhatsapp,
   FaMapMarkerAlt,
   FaChevronDown,
   FaStar
@@ -249,21 +250,21 @@ const HeroSlider = () => {
   const slides = [
     {
       id: 1,
-      bg: 'https://media.istockphoto.com/id/1367132003/photo/successful-muslim-businessman-in-traditional-white-outfit-standing-in-his-modern-office.jpg?s=1024x1024&w=is&k=20&c=sG-6l9f19Hb54NjLDjEPuHRYhBoVU7GWbtEquiuq_eQ=',
+      bg: '/assets/img/slide1.png',
       title: 'Professional Document Clearing Services in UAE',
       description: 'Expert assistance for all your government paperwork, visa processing, and business documentation needs across the Emirates.',
       buttonText: 'Book Free Meeting'
     },
     {
       id: 2,
-      bg: 'https://images.pexels.com/photos/7009468/pexels-photo-7009468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      bg: '/assets/img/slide2.JPG',
       title: 'Fast & Reliable Business Setup Solutions',
       description: 'From company formation to trade license processing, we handle all your business establishment requirements efficiently.',
       buttonText: 'Book Free Meeting'
     },
     {
       id: 3,
-      bg: 'https://images.pexels.com/photos/13252418/pexels-photo-13252418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      bg: '/assets/img/slide3.png',
       title: 'Complete Immigration & Visa Services',
       description: 'Comprehensive support for residency visas, work permits, and all immigration-related documentation in the UAE.',
       buttonText: 'Book Free Meeting'
@@ -361,7 +362,7 @@ const ServicesSection = () => {
     {
       id: 1,
       icon: '�',
-      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+      image: '/assets/img/Services/License.png',
       title: 'License Services',
       description: 'Complete assistance with new license issuance, renewal, and modification for all types of business activities in the UAE.',
       features: ['New License Issuance', 'License Renewal', 'License Modification', 'Business Activity Updates']
@@ -369,7 +370,7 @@ const ServicesSection = () => {
     {
       id: 2,
       icon: '🛂',
-      image: 'https://images.pexels.com/photos/6815941/pexels-photo-6815941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      image: '/assets/img/Services/visa.jpg',
       title: 'Visa Services',
       description: 'Professional visa processing services for employment, family, investor, and tourist visas with expert guidance.',
       features: ['Employment Visas', 'Family Visas', 'Investor Visas', 'Tourist Visas']
@@ -377,7 +378,7 @@ const ServicesSection = () => {
     {
       id: 3,
       icon: '�',
-      image: 'https://media.istockphoto.com/id/1286642966/photo/adult-arabic-man-with-arabic-woman-in-hijab-pays-for-real-estate-agent-services-real-estate.webp?s=1024x1024&w=is&k=20&c=oZep1jFOA_EoPI8AZSpbX-wNM25qunTaSYA61IzY1G0=',
+      image: '/assets/img/Services/vat.png',
       title: 'VAT & Tax Services',
       description: 'Comprehensive VAT registration, filing, and tax consultation services to ensure compliance with UAE regulations.',
       features: ['VAT Registration', 'Tax Filing', 'Tax Consultation', 'Compliance Support']
@@ -385,7 +386,7 @@ const ServicesSection = () => {
     {
       id: 4,
       icon: '�',
-      image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+      image: '/assets/img/Services/banking.jpg',
       title: 'Banking Solutions',
       description: 'Expert assistance with business and corporate bank account opening across major UAE banks.',
       features: ['Business Bank Accounts', 'Corporate Banking', 'Account Setup Assistance', 'Banking Documentation']
@@ -393,7 +394,7 @@ const ServicesSection = () => {
     {
       id: 5,
       icon: '™️',
-      image: 'https://media.istockphoto.com/id/2238711448/photo/middle-eastern-professional-discussing-business-strategy-in-modern-boardroom.jpg?s=1024x1024&w=is&k=20&c=yJkEgnHgLkimcZFPJN0U-2ehFRY72geDYajnDMo3wxA=',
+      image: '/assets/img/Services/trademark.jpg',
       title: 'Trademark & Business Formation',
       description: 'Complete trademark registration and business formation services including company setup and registration.',
       features: ['Trademark Registration', 'Company Formation', 'Business Setup', 'Legal Documentation']
@@ -401,7 +402,7 @@ const ServicesSection = () => {
     {
       id: 6,
       icon: '💳',
-      image: 'https://media.istockphoto.com/id/2155526664/photo/muslim-employee-and-laptop-in-office-for-teamwork-discussion-and-partnership-for-b2b.webp?s=1024x1024&w=is&k=20&c=5PYaiOLn5nC0Ivvh0AxS7Qt26NKd0rsvuywGEZJthHw=',
+      image: '/assets/img/Services/payment.jpg',
       title: 'Payment Solutions',
       description: 'Modern payment solutions including payment links, gateways, and mobile POS devices for your business needs. ',
       features: ['Payment Links', 'Payment Gateways', 'Mobile POS Devices', 'Payment Integration']
@@ -456,6 +457,7 @@ const ServicesSection = () => {
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover"
+                  style={(service.image && (service.image.includes('/assets/img/Services/banking.jpg') || service.image.includes('/assets/img/Services/trademark.jpg'))) ? { objectPosition: 'top' } : undefined}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
               </div>
@@ -1406,6 +1408,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: FaFacebook, href: 'https://www.facebook.com/profile.php?id=61557408093406&mibextid=ZbWKwL', color: 'hover:text-blue-600', isExternal: true },
     { icon: FaInstagram, href: 'https://www.instagram.com/al_ababil_dcs?igsh=MWswaTFhdWJocmw0ag==', color: 'hover:text-pink-600', isExternal: true },
+    { icon: FaWhatsapp, href: 'https://wa.me/971529794631?text=Hello%20I%20am%20interested%20in%20your%20services', color: 'hover:text-green-500', isExternal: true },
     { icon: FaEnvelope, href: 'mailto:ababeldcs@gmail.com', color: 'hover:text-green-600', isExternal: false }
   ];
 
