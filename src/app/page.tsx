@@ -688,7 +688,7 @@ const AboutSection = () => {
           </motion.div>
 
           {/* Section 3: Our Mission & Values */}
-          <motion.div
+          {/* <motion.div
             className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -723,10 +723,10 @@ const AboutSection = () => {
                 className="rounded-2xl shadow-2xl w-full h-80 object-cover"
               />
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Section 4: Our Team & Expertise */}
-          <motion.div
+          {/* <motion.div
             className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -765,7 +765,7 @@ const AboutSection = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Section 5: Our Track Record */}
           <motion.div
@@ -797,7 +797,7 @@ const AboutSection = () => {
           </motion.div>
 
           {/* Section 6: Call to Action */}
-          <motion.div
+          {/* <motion.div
             className="text-center bg-white rounded-3xl p-12 shadow-2xl"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -806,7 +806,7 @@ const AboutSection = () => {
           >
             <div className="absolute -bottom-6 -left-6 bg-white rounded-xl p-6 shadow-lg">
               <div className="flex items-center space-x-4">
-                {/* <AlAbabilLogo /> */}
+
                 <div>
                   <h4 className="font-bold text-gray-800">AL ABABIL</h4>
                   <p className="text-sm text-gray-600">Document Clearing Co.</p>
@@ -825,7 +825,7 @@ const AboutSection = () => {
               whileTap={{ scale: 0.98 }}
               iconType="calendar"
             />
-          </motion.div>
+          </motion.div> */}
 
         </div>
       </div>
@@ -1083,12 +1083,7 @@ const FAQSection = () => {
       question: 'How long does visa processing typically take?',
       answer: 'Visa processing times vary depending on the type of visa and current government processing times. Typically, residence visas take 5-10 working days, visit visas can be processed within 2-3 working days, and employment visas take 7-14 working days.'
     },
-    {
-      id: 3,
-      category: 'Coverage',
-      question: 'Do you assist with business setup in all Emirates?',
-      answer: 'Yes, we provide business setup and trade license services across all seven Emirates of the UAE, including Dubai, Abu Dhabi, Sharjah, Ajman, Fujairah, Ras Al Khaimah, and Umm Al Quwain. Each Emirate has specific requirements which we handle expertly.'
-    },
+
     {
       id: 4,
       category: 'Requirements',
@@ -1511,7 +1506,7 @@ export default function Home() {
       <AboutSection />
       <CompanySliderSection />
       <WhyChooseUsSection />
-      <BannerSection />
+      {/* <BannerSection /> */}
       <FAQSection />
       <ContactSection />
       <FindUsSection />
