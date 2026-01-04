@@ -457,7 +457,7 @@ const ServicesSection = () => {
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover"
-                  style={(service.image && (service.image.includes('/assets/img/Services/banking.jpg') || service.image.includes('/assets/img/Services/trademark.jpg'))) ? { objectPosition: 'top' } : undefined}
+                  style={(service.image && (service.image.includes('/assets/img/Services/banking.JPG') || service.image.includes('/assets/img/Services/trademark.JPG'))) ? { objectPosition: 'top' } : undefined}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
               </div>
