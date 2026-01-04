@@ -21,6 +21,7 @@ import BookMeetingBtn from '../components/BookMeetingBtn';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Script from 'next/script';
 
 const AlAbabilLogo = () => (
   <div
@@ -557,7 +558,7 @@ const TestimonialsSection = () => {
           </p>
         </motion.div>
 
-        <Swiper
+        {/* <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={30}
           slidesPerView={1}
@@ -602,7 +603,19 @@ const TestimonialsSection = () => {
               </motion.div>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
+
+        <>
+          <Script
+            src="https://elfsightcdn.com/platform.js"
+            strategy="afterInteractive"
+          />
+
+          <div
+            className="elfsight-app-37fd5c24-e261-4448-84e2-e2340b7c0908"
+            data-elfsight-app-lazy
+          />
+        </>
       </div>
     </section>
   );
@@ -1114,12 +1127,12 @@ const FAQSection = () => {
       question: 'Can you help with choosing the right business license type?',
       answer: 'Absolutely! We provide expert consultation to help you choose the most suitable business license type based on your business activities, target market, and long-term goals. We ensure compliance with all UAE regulations.'
     },
-    {
-      id: 9,
-      category: 'Translation',
-      question: 'Do you provide certified translation services?',
-      answer: 'Yes, we offer certified translation services for documents in Arabic, English, and other languages as required by UAE authorities. All translations are performed by certified translators and are legally recognized.'
-    },
+    // {
+    //   id: 9,
+    //   category: 'Translation',
+    //   question: 'Do you provide certified translation services?',
+    //   answer: 'Yes, we offer certified translation services for documents in Arabic, English, and other languages as required by UAE authorities. All translations are performed by certified translators and are legally recognized.'
+    // },
     {
       id: 10,
       category: 'Consultation',
